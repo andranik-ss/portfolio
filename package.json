@@ -1,0 +1,29 @@
+{
+  "name": "steam",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "18.14.2",
+    "@types/react": "18.3.10",
+    "@types/react-dom": "18.3.0",
+    "animejs": "^3.2.1",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.1",
+    "framer-motion": "^10.0.1",
+    "next": "13.5.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^4.7.1",
+    "sass": "^1.58.3",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/animejs": "^3.1.7"
+  }
+}
