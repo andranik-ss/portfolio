@@ -43,7 +43,7 @@ const projects = [
     description: 'A portfolio site built with NextJS 14 and Framer Motion just for fun.',
     modalContent: (
       <>
-        <p>This is a portfolio site built with NextJS 14 and Framer Motion. It's also deployed on Vercel.</p>
+        <p>This is a portfolio site built with NextJS 14 and Framer Motion. It&apos;s also deployed on Vercel.</p>
       </>
     ),
   },
