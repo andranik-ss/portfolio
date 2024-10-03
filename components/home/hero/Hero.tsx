@@ -1,11 +1,12 @@
-'use client'
-
-import { StandardButton } from '@/components/buttons/StandardButton'
 import { Reveal } from '@/components/utils/Reveal'
 import { DotGrid } from './DotGrid'
+import { ContactMe } from './ContactMe'
+import { useDeviceType } from '@/hooks/useDeviceType'
 import styles from './hero.module.scss'
 
 export const Hero = () => {
+  const { isMobile } = useDeviceType()
+
   return (
     <section className={`section-wrapper ${styles.hero}`}>
       <div className={styles.copyWrapper}>
@@ -28,12 +29,10 @@ export const Hero = () => {
           </p>
         </Reveal>
         <Reveal>
-          <StandardButton onClick={() => document.getElementById('contact')?.scrollIntoView()}>
-            Contact me
-          </StandardButton>
+          <ContactMe />
         </Reveal>
       </div>
-      <DotGrid />
+      {!isMobile && <DotGrid />}
     </section>
   )
 }

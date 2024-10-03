@@ -14,7 +14,7 @@ export const MyLinks = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.0 }}
       >
-        <Link href={links.linkedIn} target='_blank' rel='nofollow'>
+        <Link href={links.linkedIn} aria-label='LinkedIn' target='_blank' rel='nofollow'>
           <AiFillLinkedin size='2.4rem' />
         </Link>
       </motion.span>
@@ -24,7 +24,7 @@ export const MyLinks = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.1 }}
       >
-        <Link href={links.gitHub} target='_blank' rel='nofollow'>
+        <Link href={links.gitHub} aria-label='GitHub' target='_blank' rel='nofollow'>
           <AiFillGithub size='2.4rem' />
         </Link>
       </motion.span>
