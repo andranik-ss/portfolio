@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect } from 'react'
 import styles from './dotgrid.module.scss'
 import anime from 'animejs'

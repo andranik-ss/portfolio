@@ -1,6 +1,8 @@
+'use client'
+
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import styles from './sidebar.module.scss'
 
 const navLinks = [
@@ -41,7 +43,7 @@ export const SideBar = () => {
         onClick={() => {
           setSelected('')
           window.scrollTo({ top: 0, behavior: 'smooth' })
-          router.push('/', '/', { shallow: true })
+          router.push('/')
         }}
       >
         A<span>.</span>S

@@ -1,3 +1,5 @@
+'use client'
+
 import { StandardButton } from '@/components/buttons/StandardButton'
 import { Reveal } from '@/components/utils/Reveal'
 import { DotGrid } from './DotGrid'

@@ -1,3 +1,5 @@
+'use client';
+
 import { MouseEventHandler } from "react";
 import styles from "./standardbutton.module.scss";
 

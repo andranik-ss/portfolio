@@ -1,3 +1,5 @@
+'use client';
+
 import styles from "./heading.module.scss";
 import { MyLinks } from "./components/MyLinks";
 import { OutlineButton } from "../buttons/OutlineButton";
