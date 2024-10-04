@@ -1,3 +1,4 @@
+import { ReactNode} from "react"
 import { Reveal } from "@/components/utils/Reveal";
 import styles from "./experience.module.scss";
 
@@ -6,7 +7,7 @@ interface Props {
   position: string;
   time: string;
   location: string;
-  description: string;
+  description: ReactNode;
   tech: string[];
 }
 
@@ -38,7 +39,7 @@ export const ExperienceItem = ({
         </Reveal>
       </div>
       <Reveal>
-        <p className={styles.description}>{description}</p>
+        <div className={styles.description}>{description}</div>
       </Reveal>
       <Reveal>
         <div className={styles.tech}>

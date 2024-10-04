@@ -56,8 +56,19 @@ const experience = [
     position: 'Senior Front-End Engineer',
     time: '01/2021 - 07/2022',
     location: 'Odesa, Ukraine',
-    description: `Amblyosight is an innovative web application for clinics developed by Novartis that uses gamification and interactivity to
-treat amblyopia (lazy eye) in children.`,
+    description: (
+      <>
+        <p>
+          Amblyosight is an innovative web application for clinics developed by Novartis that uses gamification and
+          interactivity to treat amblyopia (lazy eye) in children
+        </p>
+        <p>
+          Actively participated in the design and creation of an SPA application from scratch using TypeScript, React,
+          Redux Toolkit, etc. Shoulder to shoulder, 4 teams released the first release of the application in a year and
+          a half, including documentation.
+        </p>
+      </>
+    ),
     tech: [
       'React',
       'Redux Toolkit',
@@ -72,12 +83,23 @@ treat amblyopia (lazy eye) in children.`,
     ],
   },
   {
-    title: 'Tinkoff',
+    title: 'T-Bank',
     position: 'Front-End Engineer',
     time: '03/2019 - 01/2022',
     location: 'Odesa, Ukraine',
-    description:
-      'Data Engineer for store front. Built data pipelines with Spark and Airflow. Saw Bezos one time. He said he liked my paintings. I said I liked his hair.',
+    description: (
+      <>
+        <p>Tinkoff is a leading financial services company, providing financial products and services to consumers.</p>
+        <p>
+          The main site is a complex, highly loaded application, including more than 2000 pages and small applications
+          inside. It&apos;s built on the micro-frontend architecture using the <b>tramvai</b> framework, where pages are
+          generated using the <b>page-maker</b> and filled with content from the CMS. I took part in the design and
+          maintained a <b>form-builder</b> library for building complex, multi-step forms with recovery and prefilled
+          functionality and an internal UI-Kit library. This is one of the most complex and exciting projects I have
+          worked on. Hey, folks from T-Bank!
+        </p>
+      </>
+    ),
     tech: [
       'React',
       'Redux',
