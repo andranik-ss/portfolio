@@ -7,7 +7,7 @@ import '@/styles/globals.css'
 const poppins = Poppins({ weight: ['100', '200', '400', '700', '900'], preload: false, subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Andranik Simonian | Senior Frontend Engineer | App Router',
+  title: 'Andranik Simonian | Senior Frontend Engineer',
   description: 'Portfolio of Andranik Simonian',
 }
 
