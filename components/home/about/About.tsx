@@ -13,20 +13,20 @@ export const About = () => {
         <div>
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
-              Hey! I&apos;m Andranik. It&apos;s nice to meet you here! I&apos;m a radio electronics engineer turned-in
-              developer from Odesa / Ukraine, based in Moldova for the last three years. My toolkit comprises a wide
-              range of technologies built on JavaScript and TypeScript. My primary experience is in React and its
-              ecosystem, like Redux Toolkit, React Router and so on. I&apos;m proficient with UI frameworks such as
-              Material UI and have experience in maintaining internal UI-Kit libraries, but I love building with
-              whatever tools are right for the job, investigating, making comparisons, and implementing best practices.
+              Hey! I&apos;m Andranik, a radio electronics engineer turned developer, originally from Odesa, Ukraine, and
+              currently based in Moldova for the past three years. My expertise spans a broad range of technologies
+              centered on JavaScript and TypeScript, with a strong focus on React and its ecosystem, including Redux
+              Toolkit and React Router. I&apos;m skilled in working with UI frameworks like Material UI and have
+              experience maintaining internal UI kits, but I enjoy using whatever tools are best suited for the project,
+              always investigating, comparing, and implementing best practices.
             </p>
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              I&apos;ve contributed to projects across e-commerce, healthcare, and finance domains. I&apos;ve also actively
-              participated in discussions and pivotal UI/UX and application design decisions. My passion lies in
-              designing and developing enterprise-level applications from scratch, optimizing performance, and
-              implementing the best practices.
+              I&apos;ve contributed to projects in e-commerce, healthcare, and finance, and I&apos;ve actively
+              participated in key UI/UX and application design discussions. I&apos;m passionate about building
+              enterprise-level applications from scratch, optimizing performance, and applying best practices throughout
+              development.
             </p>
           </Reveal>
           <Reveal>
@@ -37,8 +37,9 @@ export const About = () => {
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              I&apos;m passively looking for new positions where I can merge my love for code with my love for the
-              canvas. If you think you&apos;ve got an opening that I might like, let&apos;s connect 🔗
+              I&apos;m casually exploring new job opportunities where I can utilize my passion for coding, strive for
+              excellence, and maintain a healthy work-life balance while connecting with interesting individuals. If you
+              think you&apos;ve got an opening that I might like, let&apos;s connect 🔗
             </p>
           </Reveal>
           <Reveal>
