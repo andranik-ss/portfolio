@@ -1,29 +1,27 @@
-import { ReactNode} from "react"
-import { Reveal } from "@/components/utils/Reveal";
-import styles from "./experience.module.scss";
+import { ReactNode } from 'react'
+import { Reveal } from '@/components/utils/Reveal'
+import styles from './experience.module.scss'
+import Link from 'next/link'
+import { AiOutlineExport } from 'react-icons/ai'
 
 interface Props {
-  title: string;
-  position: string;
-  time: string;
-  location: string;
-  description: ReactNode;
-  tech: string[];
+  description: ReactNode
+  location: string
+  position: string
+  siteUrl: string
+  tech: string[]
+  time: string
+  title: string
 }
 
-export const ExperienceItem = ({
-  title,
-  position,
-  time,
-  location,
-  description,
-  tech,
-}: Props) => {
+export const ExperienceItem = ({ description, location, position, siteUrl, tech, time, title }: Props) => {
   return (
     <div className={styles.experience}>
       <div className={styles.heading}>
         <Reveal>
-          <span className={styles.title}>{title}</span>
+          <Link href={siteUrl} aria-label='View company site' target='_blank' rel='nofollow'>
+            <span className={styles.title}>{title}</span>
+          </Link>
         </Reveal>
         <Reveal>
           <span>{time}</span>
@@ -44,12 +42,12 @@ export const ExperienceItem = ({
       <Reveal>
         <div className={styles.tech}>
           {tech.map((item) => (
-            <span key={item} className="chip">
+            <span key={item} className='chip'>
               {item}
             </span>
           ))}
         </div>
       </Reveal>
     </div>
-  );
-};
+  )
+}

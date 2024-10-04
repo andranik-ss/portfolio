@@ -11,6 +11,11 @@
   justify-content: space-between;
 
   margin-bottom: 1.2rem;
+  
+  & a:hover {
+    color: var(--brand);
+    text-decoration: underline;
+  }
 }
 
 .title {

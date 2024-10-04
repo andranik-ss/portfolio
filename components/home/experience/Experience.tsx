@@ -15,28 +15,25 @@ export const Experience = () => {
 const experience = [
   {
     title: 'Shogun',
+    siteUrl: 'https://www.getshogun.com/',
     position: 'Senior Front-End Engineer',
     time: '10/2022 - Present',
     location: 'Odesa, Ukraine',
-    description: `Shogun is a US-based company and one of Shopify's platform's most advanced page builders for building 
-      high-converting online shopping. In the last two years, we have released many great
-      tools for our customers, such as AI-powered content and page generators, an Insights tool for measuring
-      the quality of built pages, a CMS for managing content, and adding A/B testing and personalization tools
-      for marketing purposes. We&apos;ve also upgraded the app&apos;s design with Material UI and doubled the
-      speed of loading the app by implementing code-splitting and some PWA strategies.`,
-    activities: [
-      `Worked on the AI Website Builder tool, which includes content generation, reusable sections, and automated 
-      product titles and descriptions, resulting in a 25% increase in customer upgrades to the highest plan.`,
-      `Implemented CMS, A/B testing tools, and an upgraded dashboard with customizable widgets, resulting in a more
-      than 20% increase in conversions from free trials to paid plans.`,
-      `Led the introduction of the Material UI library, resulting in a 50% reduction in development time for new
-      components, gaining accessibility and adaptiveness, and providing better UX for customers.`,
-      `Doubled application load speed through code-splitting, GraphQL query optimization, efficient use of service
-      workers, browser caching, and image compression.`,
-      `Enhanced codebase readability by establishing code-style guidelines, refactoring mixed modules with design
-      patterns, and optimizing critical components.`,
-      `Expanded unit test coverage to nearly 90% and secured critical paths with comprehensive end-to-end (e2e) tests.`,
-    ],
+    description: (
+      <>
+        <p>
+          Shogun is a US-based company and one of Shopify&apos;s platform&apos;s most advanced page builders for building
+          high-converting online shopping.
+        </p>
+        <p>
+          In the last two years, we have released many great tools for our customers, such as AI-powered content and
+          page generators, an Insights tool for measuring the quality of built pages, a CMS for managing content, and
+          adding A/B testing and personalization tools for marketing purposes. We&apos;ve also upgraded the app&apos;s
+          design with Material UI and doubled the speed of loading the app by implementing code-splitting and some PWA
+          strategies.
+        </p>
+      </>
+    ),
     tech: [
       'TypeScript',
       'React',
@@ -53,6 +50,7 @@ const experience = [
   },
   {
     title: 'Capgemini Engineering',
+    siteUrl: 'https://www.capgemini.com',
     position: 'Senior Front-End Engineer',
     time: '01/2021 - 07/2022',
     location: 'Odesa, Ukraine',
@@ -84,12 +82,13 @@ const experience = [
   },
   {
     title: 'T-Bank',
+    siteUrl: 'https://www.tbank.ru/',
     position: 'Front-End Engineer',
     time: '03/2019 - 01/2022',
     location: 'Odesa, Ukraine',
     description: (
       <>
-        <p>Tinkoff is a leading financial services company, providing financial products and services to consumers.</p>
+        <p>T-Bank is a leading financial services company, providing financial products and services to consumers.</p>
         <p>
           The main site is a complex, highly loaded application, including more than 2000 pages and small applications
           inside. It&apos;s built on the micro-frontend architecture using the <b>tramvai</b> framework, where pages are
@@ -116,6 +115,7 @@ const experience = [
   },
   {
     title: 'Bureau Veritas',
+    siteUrl: 'https://group.bureauveritas.com/',
     position: 'Front-End Engineer',
     time: '10/2016 - 02/2019',
     location: 'Odesa, Ukraine',
