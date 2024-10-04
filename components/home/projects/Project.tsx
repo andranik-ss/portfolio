@@ -69,11 +69,11 @@ export const Project = ({ modalContent, projectLink, description, imgSrc, title,
               <h4>{title}</h4>
               <div className={styles.projectTitleLine} />
               {!!code && (
-                <Link href={code} target='_blank' rel='nofollow'>
+                <Link href={code} aria-label='View code on GitHub' target='_blank' rel='nofollow'>
                   <AiFillGithub size='2.8rem' />
                 </Link>
               )}
-              <Link href={projectLink} target='_blank' rel='nofollow'>
+              <Link href={projectLink} aria-label='View project site' target='_blank' rel='nofollow'>
                 <AiOutlineExport size='2.8rem' />
               </Link>
             </div>
