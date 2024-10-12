@@ -19,7 +19,7 @@ export const Projects = () => {
 const projects = [
   {
     title: 'Shogun',
-    imgSrc: 'project-imgs/shogun.webp',
+    imgSrc: '/project-imgs/shogun.webp',
     projectLink: 'https://getshogun.com/',
     tech: ['TypeScript', 'React', 'MUI', 'Ruby', 'GraphQL', 'MongoDB'],
     description:
@@ -36,7 +36,7 @@ const projects = [
   },
   {
     title: 'Portfolio',
-    imgSrc: 'project-imgs/portfolio.webp',
+    imgSrc: '/project-imgs/portfolio.webp',
     code: 'https://www.github.com',
     projectLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     tech: ['Next.js', 'React', 'Framer Motion', 'Vercel'],

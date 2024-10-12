@@ -32,6 +32,12 @@
   cursor: auto;
 }
 
+.modalImageWrapper {
+  width: 100%;
+  aspect-ratio: 14 / 9;
+  position: relative;
+}
+
 .modalImage {
   width: 100%;
 }

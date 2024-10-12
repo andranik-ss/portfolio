@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from 'react'
 import { AiFillGithub, AiOutlineExport } from 'react-icons/ai'
 import { ProjectModal } from './ProjectModal'
 import styles from './projects.module.scss'
+import Image from 'next/image'
 
 interface Props {
   modalContent: JSX.Element
@@ -19,8 +20,6 @@ interface Props {
 }
 
 export const Project = ({ modalContent, projectLink, description, imgSrc, title, code, tech }: Props) => {
-  const [hovered, setHovered] = useState(false)
-
   const [isOpen, setIsOpen] = useState(false)
 
   const controls = useAnimation()
@@ -48,20 +47,10 @@ export const Project = ({ modalContent, projectLink, description, imgSrc, title,
         animate={controls}
         transition={{ duration: 0.75 }}
       >
-        <div
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
-          onClick={() => setIsOpen(true)}
-          className={styles.projectImage}
-        >
-          <img
-            src={imgSrc}
-            alt={`An image of the ${title} project.`}
-            style={{
-              width: hovered ? '90%' : '85%',
-              rotate: hovered ? '2deg' : '0deg',
-            }}
-          />
+        <div onClick={() => setIsOpen(true)} className={styles.projectImageWrapper}>
+          <div className={styles.projectImage}>
+            <Image src={imgSrc} alt={`An image of the ${title} project.`} fill />
+          </div>
         </div>
         <div className={styles.projectCopy}>
           <Reveal width='100%'>
