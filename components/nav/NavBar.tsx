@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/navigation'
-import styles from './sidebar.module.scss'
+import styles from './navbar.module.scss'
 
 const navLinks = [
   { id: 'about', title: 'About', href: '#about' },
@@ -12,7 +12,7 @@ const navLinks = [
   { id: 'contact', title: 'Contact', href: '#contact' },
 ]
 
-export const SideBar = () => {
+export const NavBar = () => {
   const [selected, setSelected] = useState('')
   const router = useRouter()
 

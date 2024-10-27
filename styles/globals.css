@@ -77,3 +77,14 @@ a {
   padding: 0.2rem 0.8rem;
   border-radius: 999px;
 }
+
+.layout {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 64px 1fr;
+  }
+}
