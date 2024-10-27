@@ -19,7 +19,7 @@ export const ExperienceItem = ({ description, location, position, siteUrl, tech,
     <div className={styles.experience}>
       <div className={styles.heading}>
         <Reveal>
-          <Link href={siteUrl} aria-label='View company site' target='_blank' rel='nofollow'>
+          <Link href={siteUrl} aria-label={`View ${title} site (opens in a new tab)`} target='_blank' rel='nofollow'>
             <span className={styles.title}>{title}</span>
           </Link>
         </Reveal>

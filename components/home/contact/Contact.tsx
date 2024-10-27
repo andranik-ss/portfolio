@@ -20,14 +20,15 @@ export const Contact = () => {
               href={links.linkedIn}
               target="_blank"
               rel="nofollow"
+              aria-label="Visit my LinkedIn profile (opens in a new tab)"
             >
-              Linkedin
+              LinkedIn
             </Link>{" "}
             if that&apos;s more your speed.
           </p>
         </Reveal>
         <Reveal width="100%">
-          <Link href={`mailto:${links.email}`}>
+          <Link href={`mailto:${links.email}`} aria-label="Send me an email">
             <div className={styles.contactEmail}>
               <AiFillMail size="2.4rem" />
               <span>{links.email}</span>

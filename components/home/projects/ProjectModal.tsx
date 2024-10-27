@@ -32,7 +32,13 @@ export const ProjectModal = ({ modalContent, projectLink, setIsOpen, imgSrc, isO
   }, [isOpen])
 
   const content = (
-    <div className={styles.modal} onClick={() => setIsOpen(false)}>
+    <div
+      role='dialog'
+      id='projectModal'
+      className={styles.modal}
+      onClick={() => setIsOpen(false)}
+      aria-label='Project dialog'
+    >
       <button className={styles.closeModalBtn}>
         <MdClose />
       </button>
@@ -58,11 +64,21 @@ export const ProjectModal = ({ modalContent, projectLink, setIsOpen, imgSrc, isO
             </p>
             <div className={styles.links}>
               {code && (
-                <Link target='_blank' rel='nofollow' href={code}>
+                <Link
+                  target='_blank'
+                  rel='nofollow'
+                  href={code}
+                  aria-label='View project source code (opens in a new tab)'
+                >
                   <AiFillGithub /> source code
                 </Link>
               )}
-              <Link target='_blank' rel='nofollow' href={projectLink}>
+              <Link
+                target='_blank'
+                rel='nofollow'
+                href={projectLink}
+                aria-label='View live project (opens in a new tab)'
+              >
                 <AiOutlineExport /> live project
               </Link>
             </div>

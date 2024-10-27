@@ -91,9 +91,9 @@ const experience = [
         <p>T-Bank is a leading financial services company, providing financial products and services to consumers.</p>
         <p>
           The main site is a complex, highly loaded application, including more than 2000 pages and small applications
-          inside. It&apos;s built on the micro-frontend architecture using the <b>tramvai</b> framework, where pages are
-          generated using the <b>page-maker</b> and filled with content from the CMS. I took part in the design and
-          maintained a <b>form-builder</b> library for building complex, multi-step forms with recovery and prefilled
+          inside. It&apos;s built on the micro-frontend architecture using the <strong>tramvai</strong> framework, where pages are
+          generated using the <strong>page-maker</strong> and filled with content from the CMS. I took part in the design and
+          maintained a <strong>form-builder</strong> library for building complex, multi-step forms with recovery and prefilled
           functionality and an internal UI-Kit library. This is one of the most complex and exciting projects I have
           worked on. Hey, folks from T-Bank!
         </p>
