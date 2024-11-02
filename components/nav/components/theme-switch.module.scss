@@ -1,0 +1,107 @@
+.themeToggle {
+    --size: 2rem;
+    --icon-fill: hsl(210 10% 30%);
+    --icon-fill-hover: hsl(210 10% 15%);
+
+    &[data-theme="dark"] {
+        --icon-fill: hsl(210 10% 70%);
+        --icon-fill-hover: hsl(210 15% 90%);
+    }
+
+    background: none;
+    border: none;
+    padding: 0;
+
+    inline-size: var(--size);
+    block-size: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    cursor: pointer;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    outline-offset: 5px;
+
+    &>svg {
+        inline-size: 100%;
+        block-size: 100%;
+        stroke-linecap: round;
+    }
+
+    :hover,
+    :focus-visible {
+        &> :is(.moon, .sun) {
+            fill: var(--icon-fill-hover);
+        }
+
+        &>.sunBeams {
+            stroke: var(--icon-fill-hover);
+        }
+    }
+
+    .sunAndMoon {
+        &> :is(.moon, .sun, .sunBeams) {
+            transform-origin: center center;
+        }
+
+        &> :is(.moon, .sun) {
+            fill: var(--icon-fill);
+        }
+
+        &>.sunBeams {
+            stroke: var(--icon-fill);
+            stroke-width: 2px;
+        }
+
+        &.moon>circle {
+            transform: translateX(-7px);
+            transition: transform .25s ease-in-out;
+
+            @supports (cx: 1px) {
+                transform: translateX(0);
+                cx: 17px;
+                transition: cx .25s ease-in-out;
+            }
+        }
+
+        &>.sun {
+            transition: transform .5s ease-in-out;
+        }
+
+        &>.sunBeams {
+            transition:
+                transform .5s ease-in-out,
+                opacity .5s ease-in-out;
+        }
+    }
+
+    &[data-theme="dark"] {
+        .sunAndMoon {
+            &>.sun {
+                transform: scale(1.75);
+
+                transition-timing-function: ease-in-out;
+                transition-duration: .25s;
+            }
+
+            &>.sunBeams {
+                opacity: 0;
+
+                transform: rotateZ(-25deg);
+                transition-duration: .15s;
+            }
+
+            &>.moon>circle {
+                transform: translateX(-7px);
+
+                @supports (cx: 1px) {
+                    transform: translateX(0);
+                    cx: 17px;
+                }
+
+                transition-delay: .25s;
+                transition-duration: .5s;
+            }
+        }
+    }
+}

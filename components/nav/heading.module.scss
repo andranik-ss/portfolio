@@ -1,6 +1,6 @@
 .heading {
   height: calc(45px + 3.6rem);
-  padding: 0 3.6rem;
+  padding: 2.4rem 3.6rem;
 
   display: flex;
   align-items: center;
@@ -17,6 +17,6 @@
   font-weight: bold;
 
   @media (max-width: 768px) {
-    padding: 0 2.4rem;
+    padding: 2.4rem;
   }
 }

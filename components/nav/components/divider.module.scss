@@ -1,0 +1,16 @@
+.divider {
+    margin: 0.8rem;
+    width: 100%;
+
+    opacity: 0.3;
+
+    border-width: 0 thin 0 0;
+    border-color: var(--text);
+    border-style: solid;
+}
+
+.vertical {
+    align-self: stretch;
+    height: auto;
+    width: 1px;
+}

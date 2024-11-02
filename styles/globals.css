@@ -1,13 +1,26 @@
 :root {
   font-size: 62.5%;
 
-  --background: #111111;
-  --bg-opaque: #11111140;
-  --background-light: #232323;
-  --background-dark: #080808;
+  .dark {
+    --background: #111111;
+    --bg-opaque: #11111140;
+    --background-light: #232323;
+    --background-dark: #080808;
 
-  --text: #ebecf3;
-  --brand: #47b187;
+    --divider: #8b8b8b;
+    --text: #ebecf3;
+    --brand: #47b187;
+  }
+
+  .light {
+    --background: #f5f5f5;
+    --bg-opaque: #f5f5f5ca;
+    --background-light: #d3d3d3;
+    --background-dark: #e2e2e2;
+
+    --text: #232323;
+    --brand: #205c44;
+  }
 
   --text-xs: 1.6rem;
   --text-sm: 1.8rem;
@@ -37,6 +50,10 @@
 *::selection {
   background: var(--brand);
   color: var(--background);
+
+  transition-property: background, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
 }
 
 html,
@@ -49,6 +66,10 @@ body {
 body {
   color: var(--text);
   background: var(--background);
+
+  transition-property: background, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
 }
 
 a {

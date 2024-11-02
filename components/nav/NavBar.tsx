@@ -43,7 +43,7 @@ export const NavBar = () => {
         onClick={() => {
           setSelected('')
           window.scrollTo({ top: 0, behavior: 'smooth' })
-          router.push('/')
+          setTimeout(() => router.push('/'), 500)
         }}
       >
         A<span>.</span>S
