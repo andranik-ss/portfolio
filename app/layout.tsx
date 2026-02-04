@@ -11,7 +11,7 @@ import { Providers } from './providers'
 const poppins = Poppins({ subsets: ['latin'], weight: ['100', '200', '400', '700', '900'], display: 'swap' })
 
 export const metadata: Metadata = {
-  title: 'Andranik Simonian | Senior Frontend Engineer',
+  title: 'Andranik Simonian | Senior Full Stack Engineer',
   description: 'Portfolio of Andranik Simonian',
 }
 
