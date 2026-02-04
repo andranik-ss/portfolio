@@ -1,10 +1,10 @@
 'use client'
 
-import { MyLinks } from './components/MyLinks'
 import { OutlineButton } from '../buttons/OutlineButton'
-import { Divider } from './components/Divider'
-import { ThemeSwitch } from './components/ThemeSwitch'
 import NoSSR from '../utils/NoSSR'
+import { Divider } from './components/Divider'
+import { MyLinks } from './components/MyLinks'
+import { ThemeSwitch } from './components/ThemeSwitch'
 import styles from './heading.module.scss'
 
 export const Heading = () => {
@@ -16,7 +16,7 @@ export const Heading = () => {
       <Divider orientation='vertical' />
       <MyLinks />
       <Divider orientation='vertical' />
-      <OutlineButton onClick={() => window.open('/Andranik_Simonian_Senior_Frontend_Engineer.pdf')}>
+      <OutlineButton onClick={() => window.open('/Andranik_Simonian_Senior_Fullstack_Engineer.pdf')}>
         My resume
       </OutlineButton>
     </header>

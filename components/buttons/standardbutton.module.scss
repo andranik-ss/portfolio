@@ -16,6 +16,8 @@
   overflow: hidden;
 
   transition: 0.2s opacity;
+
+  pointer-events: auto;
 }
 
 .standardButton:hover {
